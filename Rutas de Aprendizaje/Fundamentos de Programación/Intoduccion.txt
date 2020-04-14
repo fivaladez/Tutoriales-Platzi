@@ -1,0 +1,6 @@
+Para desarrollo web se necesita:
+    HTML - Información
+    CSS - Diseño
+    JavaScript - Interactividad
+
+El navegador es el que interpreta estos lenguajes.

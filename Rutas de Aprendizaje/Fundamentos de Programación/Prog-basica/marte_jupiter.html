@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu peso en Marte</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distintoq que en Marte o Jupiter</p>
+    <script>
+        // Pide el valor al usuario
+        var usuario = prompt("Cuál es tu peso en kg?")
+        var planeta = prompt("Elige tu planeta.\n 1 es marte, 2 es Jupiter");
+        var g_tierra = 9.8;
+        var g_marte = 3.7;
+        var g_jupiter = 24.8;
+        // Casteo a Float
+        var peso = parseFloat(usuario);
+        var peso_final;
+        var nombre;
+        if (planeta == 1) {
+            peso_final = parseInt(peso * g_marte / g_tierra);
+            nombre = "Marte";
+        } else if (planeta == 2) {
+            peso_final = parseInt(peso * g_jupiter / g_tierra);
+            nombre = "Jupiter";
+        } else {
+            peso_final = 1000000;
+            nombre = "Krypton";
+        }
+
+        // Poner en negritas el peso
+        document.write("Tu peso en " + nombre + " es <strong>" + peso_final + " kg </strong>");
+        // Docment Object Model - Arbol de HTML
+    </script>
+</body>
+
+</html>
